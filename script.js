@@ -10,7 +10,7 @@ if (localStorage.getItem("User") !== null) {
     btn.innerHTML = "LOGGA UT";
     document.body.appendChild(btn);
     
-    // En button som loggar ut användaren, tömmer innehåll på sidan och återskapar html-koden för formuläret.
+    // En button som loggar ut användaren, tömmer värden i storage och återskapar html-koden för formuläret.
     btn.addEventListener("click", function logOut(){
         localStorage.clear();
         document.body.innerHTML = "";
